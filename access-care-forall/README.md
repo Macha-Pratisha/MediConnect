@@ -1,50 +1,51 @@
-MediConnect – Patient Frontend
-Project Info
+# **MediConnect – Patient Frontend**
 
-A unified healthcare platform connecting patients with doctors, counselors, and ambulances. The frontend provides a simple and intuitive interface for patients to access healthcare services quickly, with visual aids and medical-only terms to overcome language barriers.
+## **Project Info**
+MediConnect is a unified healthcare platform connecting patients with doctors, counselors, and ambulances.  
+This frontend allows patients to request consultations and emergency services using a simple, intuitive interface with visuals and medical-only terms to overcome language barriers.
 
-How to Edit the Code
+---
 
-You can edit the project locally using your preferred IDE:
+## **Prerequisites**
+Before running this project locally, ensure you have:
+- **Node.js** (v16 or above) – [Download Node.js](https://nodejs.org/)
+- **npm** (comes with Node.js)
+- **Backend running** (see `bbackend` setup)
+- **MongoDB** (local or cloud, e.g., [MongoDB Atlas](https://www.mongodb.com/cloud/atlas))
 
-Clone the repository
+---
 
-git clone https://github.com/Macha-Pratisha/MediConnect.git
+## **Installing Dependencies**
+```bash
+# Navigate to the frontend folder
 cd MediConnect/access-care-forall
 
-
-Install dependencies
-
+# Install required packages
 npm install
 
-
-Run the development server
-
+--> Running the Project Locally
+# Start the development server
 npm run dev
+> Runs the frontend (default: http://localhost:5173)
+> Provides the patient interface to request consultations, chat with doctors, and call ambulances.
 
-
-Make changes
-
-Edit files in your IDE.
-
-Save and test changes in the running dev server.
-
-Commit and push your changes:
-
-git add .
-git commit -m "Your message"
-git push origin main
+** Working of the Project **
+> Patient logs into the frontend and requests a consultation or emergency service.
+> The backend receives the request, stores data, and notifies doctors/counselors in real-time.
+> Doctors respond via the doctor frontend, enabling live chat.
+> Ambulance services can be dispatched if required, with backend handling location and tracking.
+> All messages, notifications, and patient requests are stored in MongoDB and updated in real-time via Socket.IO.
 
 Technologies Used
-
-Frontend: React, Vite, TypeScript, Tailwind CSS, shadcn-ui
-
-Realtime / Communication: Socket.IO (if applicable)
+React, Vite, TypeScript
+Tailwind CSS, shadcn-ui
+Socket.IO (for realtime communication)
 
 Deployment
+Frontend can be deployed on Vercel or Netlify.
+Ensure the backend API is running and accessible for full functionality.
 
-The frontend can be deployed using Vercel or Netlify.
+Notes
+Always start the backend before running the frontend.
+Update .env if required for API endpoints or configuration.
 
-Make sure the backend API is running and accessible for full functionality.
-
-✅ This frontend is part of the MediConnect project aimed at making healthcare accessible, fast, and easy to use for everyone.
