@@ -39,9 +39,8 @@ MediConnect/
 ---
 
 ## **📦 Installing Dependencies**
-
-### **Backend**
-
+```bash
+Backend
 cd bbackend
 npm install
 
@@ -69,7 +68,10 @@ Request consultations, chat, and call ambulances
 Doctor Frontend
 cd ../doctor-desk-assist
 npm run dev
-Doctor interface (default: http://localhost:5174)
+Doctor interface (default: http://localhost:8081)
+
+```
+
 Respond to patients, chat, and coordinate emergencies
 ⚠️ Note: Always start the backend before running any frontend.
 
