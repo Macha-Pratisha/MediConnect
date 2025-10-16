@@ -1,5 +1,5 @@
 # **MediConnect – Unified Healthcare Platform**
-
+![Socket.IO](https://img.shields.io/badge/Realtime-Socket.IO-red)
 ## **Project Overview**
 MediConnect is a unified healthcare platform connecting patients with doctors, counselors, and ambulances.  
 The system removes long waits, breaks language barriers using visuals and medical-only terms, and ensures quick, easy access to healthcare for everyone.  
@@ -80,6 +80,6 @@ Notes
 Update .env files for MongoDB, JWT secrets, and API URLs as needed.
 Make sure backend is running before starting any frontend.
 This repository is fully modular — each frontend and backend can be deployed independently.
-![Socket.IO](https://img.shields.io/badge/Realtime-Socket.IO-red)
+
 
 
