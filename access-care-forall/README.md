@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+MediConnect – Patient Frontend
+Project Info
 
-## Project info
+A unified healthcare platform connecting patients with doctors, counselors, and ambulances. The frontend provides a simple and intuitive interface for patients to access healthcare services quickly, with visual aids and medical-only terms to overcome language barriers.
 
-**URL**: https://lovable.dev/projects/96473ca8-69f7-4217-8045-08b030eff162
+How to Edit the Code
 
-## How can I edit this code?
+You can edit the project locally using your preferred IDE:
 
-There are several ways of editing your application.
+Clone the repository
 
-**Use Lovable**
+git clone https://github.com/Macha-Pratisha/MediConnect.git
+cd MediConnect/access-care-forall
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/96473ca8-69f7-4217-8045-08b030eff162) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+Install dependencies
 
-**Use your preferred IDE**
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Run the development server
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Make changes
 
-**Use GitHub Codespaces**
+Edit files in your IDE.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Save and test changes in the running dev server.
 
-## What technologies are used for this project?
+Commit and push your changes:
 
-This project is built with:
+git add .
+git commit -m "Your message"
+git push origin main
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Technologies Used
 
-## How can I deploy this project?
+Frontend: React, Vite, TypeScript, Tailwind CSS, shadcn-ui
 
-Simply open [Lovable](https://lovable.dev/projects/96473ca8-69f7-4217-8045-08b030eff162) and click on Share -> Publish.
+Realtime / Communication: Socket.IO (if applicable)
 
-## Can I connect a custom domain to my Lovable project?
+Deployment
 
-Yes, you can!
+The frontend can be deployed using Vercel or Netlify.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Make sure the backend API is running and accessible for full functionality.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+✅ This frontend is part of the MediConnect project aimed at making healthcare accessible, fast, and easy to use for everyone.
