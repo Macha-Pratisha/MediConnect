@@ -72,36 +72,36 @@ Doctor interface (default: http://localhost:8081)
 
 ```
 
-Respond to patients, chat, and coordinate emergencies
+Respond to patients, chat, and coordinate emergencies  <br>
 ⚠️ Note: Always start the backend before running any frontend.
 
-🔄 How the System Works
-🧑‍⚕️ Patient requests consultation or emergency via patient frontend
-🖥 Backend stores request and sends notifications in real-time to doctors/counselors
-👨‍⚕️ Doctors respond via doctor frontend
-🚑 Ambulance is dispatched if needed and tracked through the backend
+🔄 How the System Works<br>
+🧑‍⚕️ Patient requests consultation or emergency via patient frontend <br>
+🖥 Backend stores request and sends notifications in real-time to doctors/counselors <br>
+👨‍⚕️ Doctors respond via doctor frontend <br>
+🚑 Ambulance is dispatched if needed and tracked through the backend <br>
 💾 All data, messages, and notifications are stored in MongoDB and updated in real-time via Socket.IO
 
-🧩 Technologies Used
-Frontend: React, Vite, TypeScript, Tailwind CSS, shadcn-ui
-Backend: Node.js, Express, MongoDB, Socket.IO, JWT authentication
-Realtime Communication: Socket.IO for chat and notifications
+🧩 Technologies Used <br>
+Frontend: React, Vite, TypeScript, Tailwind CSS, shadcn-ui <br>
+Backend: Node.js, Express, MongoDB, Socket.IO, JWT authentication <br>
+Realtime Communication: Socket.IO for chat and notifications <br>
 
-🌐 Deployment
-Frontends: Vercel / Netlify
-Backend: Render / Railway / Vercel (backend only)
-Ensure backend API URL is correctly configured in frontend .env files
+🌐 Deployment <br>
+Frontends: Vercel / Netlify <br>
+Backend: Render / Railway / Vercel (backend only) <br>
+Ensure backend API URL is correctly configured in frontend .env files 
 
-💡 Notes
-Update .env files for MongoDB, JWT secrets, and API URLs as needed
-Backend must be running before starting frontends
+💡 Notes <br>
+Update .env files for MongoDB, JWT secrets, and API URLs as needed <br>
+Backend must be running before starting frontends <br>
 Each frontend and backend can be deployed independently
 
-👥 Team
-M Pratisha - Backend and APIs
-S Yasmin -  Authentication Interface
-V Yoga priya - Translation Integration 
-G Keerthana - Doctor Interface
-T.G Sowmya - Patient Interface
+👥 Team <br>
+M Pratisha - Backend and APIs <br>
+S Yasmin -  Authentication Interface <br>
+V Yoga priya - Translation Integration  <br>
+G Keerthana - Doctor Interface <br>
+T.G Sowmya - Patient Interface <br>
 
 
