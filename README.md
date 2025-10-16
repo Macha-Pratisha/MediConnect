@@ -41,7 +41,7 @@ MediConnect/
 ## **📦 Installing Dependencies**
 
 ### **Backend**
-```bash
+
 cd bbackend
 npm install
 
