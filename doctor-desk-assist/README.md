@@ -26,9 +26,9 @@ npm install
 Running the Project Locally
 # Start the development server
 npm run dev
-> Runs the frontend (default: http://localhost:5174)
+> Runs the frontend (default: http://localhost:8081)
 > Provides the doctor interface to receive patient requests, chat, and coordinate with counselors or ambulances.
-
+```
 ---
 **Working of the Project**
 > Doctor logs into the frontend and sees incoming patient requests.
@@ -37,15 +37,15 @@ npm run dev
 > For emergencies, ambulance requests are handled through the backend and tracked in real-time.
 > All messages, notifications, and patient data are stored in MongoDB and updated via Socket.IO.
 
-Technologies Used
+**Technologies Used**
 React, Vite, TypeScript
 Tailwind CSS, shadcn-ui
 Socket.IO (for realtime communication)
 
-Deployment
+**Deployment**
 Frontend can be deployed on Vercel or Netlify.
 Ensure the backend API is running and accessible for full functionality.
 
-Notes
+**Notes**
 Always start the backend before running the frontend.
 Update .env if required for API endpoints or configuration.
