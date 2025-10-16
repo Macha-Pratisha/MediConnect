@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+# **MediConnect – Doctor Frontend**
 
-## Project info
+## **Project Info**
+MediConnect is a unified healthcare platform connecting patients with doctors, counselors, and ambulances.  
+This frontend allows doctors to receive patient requests, communicate via chat, view patient details, and coordinate care, including emergency ambulance services.
 
-**URL**: https://lovable.dev/projects/bab17eed-3dd8-4848-b0a7-13edea0ae39f
+---
 
-## How can I edit this code?
+## **Prerequisites**
+Before running this project locally, ensure you have:
+- **Node.js** (v16 or above) – [Download Node.js](https://nodejs.org/)
+- **npm** (comes with Node.js)
+- **Backend running** (see `bbackend` setup)
+- **MongoDB** (local or cloud, e.g., [MongoDB Atlas](https://www.mongodb.com/cloud/atlas))
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## **Installing Dependencies**
+```bash
+# Navigate to the doctor frontend folder
+cd MediConnect/doctor-desk-assist
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bab17eed-3dd8-4848-b0a7-13edea0ae39f) and start prompting.
+# Install required packages
+npm install
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Running the Project Locally
+# Start the development server
 npm run dev
-```
+> Runs the frontend (default: http://localhost:5174)
+> Provides the doctor interface to receive patient requests, chat, and coordinate with counselors or ambulances.
 
-**Edit a file directly in GitHub**
+---
+**Working of the Project**
+> Doctor logs into the frontend and sees incoming patient requests.
+> The backend notifies doctors in real-time about new consultation requests or emergency alerts.
+> Doctors respond via chat, provide guidance, and coordinate with counselors if needed.
+> For emergencies, ambulance requests are handled through the backend and tracked in real-time.
+> All messages, notifications, and patient data are stored in MongoDB and updated via Socket.IO.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Technologies Used
+React, Vite, TypeScript
+Tailwind CSS, shadcn-ui
+Socket.IO (for realtime communication)
 
-**Use GitHub Codespaces**
+Deployment
+Frontend can be deployed on Vercel or Netlify.
+Ensure the backend API is running and accessible for full functionality.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bab17eed-3dd8-4848-b0a7-13edea0ae39f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Notes
+Always start the backend before running the frontend.
+Update .env if required for API endpoints or configuration.
